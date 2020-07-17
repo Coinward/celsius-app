@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, Image } from "react-native";
-// import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { countries } from "country-data";
@@ -23,9 +22,6 @@ import API from "../../../constants/API";
 @connect(
   state => ({
     formData: state.forms.formData,
-    currencyRates: state.currencies.currencyRatesShort,
-    bankAccountInfo: state.user.bankAccountInfo,
-    loanInfo: state.loans.loanInfo,
     loan: state.loans.loan,
     callsInProgress: state.api.callsInProgress,
   }),

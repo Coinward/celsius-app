@@ -14,7 +14,6 @@ import MultiInfoCardButton from "../../molecules/MultiInfoCardButton/MultiInfoCa
 
 @connect(
   state => ({
-    formData: state.forms.formData,
     loanSettings: state.loans.loanSettings,
     loyaltyInfo: state.loyalty.loyaltyInfo,
   }),
